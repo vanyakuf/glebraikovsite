@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: vanyakuf/glebraikovsite
+  branch: main
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title_en", label: "Title (EN)", widget: "string" }
+      - { name: "title_fr", label: "Title (FR)", widget: "string" }
+      - { name: "preview_image", label: "Preview Image", widget: "image" }
+      - { name: "description_en", label: "Description (EN)", widget: "text" }
+      - { name: "description_fr", label: "Description (FR)", widget: "text" }
+      - { name: "video_link", label: "Video Link (YouTube/Vimeo)", widget: "string", required: false }
+      - { name: "order", label: "Order", widget: "number", default: 1 }
+      - { name: "published", label: "Published", widget: "boolean", default: true }

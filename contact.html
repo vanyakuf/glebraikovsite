@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Gleb Raikov</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="/js/includes.js" defer></script>
+
+  <link rel="icon" href="/assets/images/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/web-app-manifest-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon/web-app-manifest-512x512.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="contact">
+    <h1 class="contact__title">Have a question? Let’s talk</h1>
+
+    <form class="contact__form" method="POST" action="/php/send.php">
+      <div class="contact__row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="contact__row">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </div>
+      <p class="contact__privacy">
+        By submitting this form, you agree to our <a href="/privacypolicy.html">Privacy Policy</a>
+      </p>
+    </form>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="js/main.js" defer></script>
+
+</body>
+</html>
